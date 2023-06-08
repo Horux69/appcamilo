@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
+
+*{
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+
+ion-avatar {
+    width: 100%;
+    height: auto;
+    max-width: 200px;
+    max-height: 200px;
+    margin: 0 auto;
+    --border-radius: 28px;
+}
+
+.loader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px; /* Ajusta la altura del contenedor según tus necesidades */
+  }
+  
+  .custom-spinner {
+    --inner-stroke-width: 8px; /* Ajusta el grosor del círculo interno */
+    --outer-stroke-width: 8px; /* Ajusta el grosor del círculo externo */
+    width: 100px; /* Ajusta el tamaño del spinner según tus necesidades */
+    height: 100px; /* Ajusta el tamaño del spinner según tus necesidades */
+  }
+.text-episodes {
+    font-size: 15px;
+}  

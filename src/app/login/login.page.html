@@ -1,0 +1,38 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title>Login</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <div class="formContainer">
+    <ion-card class="cardContainer">
+      <ion-card-header style="padding-top: 20px;">
+        <ion-card-title id="titleLogin">INICIA SESION</ion-card-title>
+      </ion-card-header>
+      <ion-card-content style="padding-bottom: 20px;">
+        <form [formGroup]="formularioLogin">
+          <ion-item class="inputItem">
+            <ion-label class="fontLabel" position="floating">Nombre:</ion-label>
+            <ion-input formControlName="nombre" [(ngModel)]="myName"></ion-input>
+          </ion-item>
+          <ion-item class="inputItem">
+            <ion-label class="fontLabel" position="floating">Contraseña:</ion-label>
+            <ion-input formControlName="password" type="password" [(ngModel)]="myPassword"></ion-input>
+          </ion-item>
+        </form>
+        <div class="loginRegister">
+          <ion-button (click)="enviar()">
+            Ingresar
+          </ion-button>
+          <ion-button (click)="registro()">
+            Registrarse
+          </ion-button>
+        </div>
+      </ion-card-content>
+    </ion-card>
+  </div>
+
+</ion-content>
+
